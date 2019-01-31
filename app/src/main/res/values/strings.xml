@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">tour de Balikpapan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register_here">Register Here</string>
+    <string name="login_as_guest">Login as Guest</string>
+
+    <string name="invalid_username">Username is invalid</string>
+    <string name="invalid_password">Password must be at least 6 characters</string>
+</resources>

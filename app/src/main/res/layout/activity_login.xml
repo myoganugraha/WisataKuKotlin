@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:id="@+id/linearLayoutLogin">
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameLoginWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                app:errorTextAppearance="@style/error"
+                app:errorEnabled="true">
+
+            <EditText
+                    android:id="@+id/usernameLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username_field"
+                    android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordLoginWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                app:passwordToggleEnabled="true"
+                app:errorTextAppearance="@style/error"
+                app:errorEnabled="true">
+
+            <EditText
+                    android:id="@+id/passwordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/password_field"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+                android:id="@+id/btnProcedLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+
+
+        <Button
+                android:id="@+id/btnToRegisterActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="@string/register_here"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        <Button
+                android:id="@+id/btnLoginAsGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/login_as_guest"
+                android:textAllCaps="false"
+                android:textColor="@color/guest_login"
+                android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
