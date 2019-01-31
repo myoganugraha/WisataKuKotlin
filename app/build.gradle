@@ -18,9 +18,14 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField 'String', "WisataKu_API", WisataKu_API
+            resValue 'string', "wisataku_api", WisataKu_API
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue 'string', "wisataku_api", WisataKu_API
         }
     }
 }
